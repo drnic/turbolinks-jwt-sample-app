@@ -8,6 +8,6 @@ class AppUninstalledJob < ActiveJob::Base
   private
 
   def mark_shop_as_uninstalled(shop)
-    shop.uninstall! if shop
+    shop&.uninstall!
   end
 end

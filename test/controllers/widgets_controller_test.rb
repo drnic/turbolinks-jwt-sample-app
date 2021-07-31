@@ -1,4 +1,4 @@
-require 'test_helper'
+require "test_helper"
 
 class WidgetsControllerTest < ActionDispatch::IntegrationTest
   setup do
@@ -16,8 +16,8 @@ class WidgetsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should create widget" do
-    assert_difference('Widget.count') do
-      post widgets_url, params: { widget: { name: @widget.name, size: @widget.size } }
+    assert_difference("Widget.count") do
+      post widgets_url, params: {widget: {name: @widget.name, size: @widget.size}}
     end
 
     assert_redirected_to widget_url(Widget.last)
@@ -34,12 +34,12 @@ class WidgetsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update widget" do
-    patch widget_url(@widget), params: { widget: { name: @widget.name, size: @widget.size } }
+    patch widget_url(@widget), params: {widget: {name: @widget.name, size: @widget.size}}
     assert_redirected_to widget_url(@widget)
   end
 
   test "should destroy widget" do
-    assert_difference('Widget.count', -1) do
+    assert_difference("Widget.count", -1) do
       delete widget_url(@widget)
     end
 

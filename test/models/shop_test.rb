@@ -1,5 +1,5 @@
-require 'test_helper'
-require 'helpers/shop_lifecycle_test_helper'
+require "test_helper"
+require "helpers/shop_lifecycle_test_helper"
 
 class ShopTest < ActiveSupport::TestCase
   def setup

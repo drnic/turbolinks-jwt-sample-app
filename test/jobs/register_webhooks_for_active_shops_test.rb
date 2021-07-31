@@ -1,4 +1,4 @@
-require 'test_helper'
+require "test_helper"
 
 class RegisterWebhooksForActiveShopsTest < ActiveJob::TestCase
   def setup
@@ -9,7 +9,6 @@ class RegisterWebhooksForActiveShopsTest < ActiveJob::TestCase
   def job
     @job ||= ::RegisterWebhooksForActiveShops.new
   end
-
 
   test "RegisterWebhooksForActiveShops registers webhooks for all existing shops" do
     ShopifyApp::WebhooksManagerJob.expects(:perform_now).with(

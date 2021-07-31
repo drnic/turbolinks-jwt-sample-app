@@ -1,5 +1,5 @@
-require 'test_helper'
-require 'helpers/shop_lifecycle_test_helper'
+require "test_helper"
+require "helpers/shop_lifecycle_test_helper"
 
 class AppUninstalledJobTest < ActiveJob::TestCase
   include ShopLifecycleTestHelper
@@ -23,7 +23,7 @@ class AppUninstalledJobTest < ActiveJob::TestCase
 
   test "AppUninstalledJob does nothing for non-existent shop" do
     assert_no_installation_change do
-      job.perform(shop_domain: 'example.myshopify.com')
+      job.perform(shop_domain: "example.myshopify.com")
     end
   end
 end
