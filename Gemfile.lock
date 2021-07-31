@@ -309,11 +309,10 @@ DEPENDENCIES
   rails (>= 6.1)
   sass-rails (>= 6)
   selenium-webdriver
-  shopify_app
+  shopify_app (~> 18.0)
   sqlite3 (~> 1.4)
   standardrb (~> 1.0)
   turbolinks (~> 5)
-  tzinfo-data
   web-console (>= 3.3.0)
   webdrivers
   webpacker (~> 4.0)
