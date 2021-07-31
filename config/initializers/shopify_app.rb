@@ -14,6 +14,8 @@ ShopifyApp.configure do |config|
   config.webhooks = [
     {topic: "app/uninstalled", address: "#{ENV["APP_URL"]}/webhooks/app_uninstalled", format: "json"}
   ]
+
+  config.login_url = "/shopifyapp-mountpoint/login"
 end
 
 # ShopifyApp::Utils.fetch_known_api_versions                        # Uncomment to fetch known api versions from shopify servers on boot
