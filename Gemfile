@@ -51,4 +51,5 @@ end
 
 gem "standardrb", "~> 1.0", group: :development
 
-gem "shopify_app", "~> 18.0"
+gem "shopify_app", path: "../shopify_app"
+# gem "shopify_app", "~> 18.0"
